@@ -87,9 +87,9 @@ const showCurrentClubInfo = async (teamData, teamId) => {
             <div class="matches_info">
               <div class="competition_name">${match.competition.name}</div>
               <div class="match_group">${match.group}</div>
-              <div class="match_date">Date: ${match.utcDate}</div>
-              <div class="home_team">Home team: ${match.homeTeam.name}</div>
-              <div class="away_team">Away team: ${match.awayTeam.name}</div>
+              <div class="match_date"><p class="bold">Date: </p> ${match.utcDate}</div>
+              <div class="home_team"><p class="bold">Home team: </p> ${match.homeTeam.name}</div>
+              <div class="away_team"><p class="bold">Away team: </p> ${match.awayTeam.name}</div>
             </div>
             `;
 
@@ -98,7 +98,7 @@ const showCurrentClubInfo = async (teamData, teamId) => {
     } else {
         teamList.insertAdjacentHTML(
             "beforeend",
-            "<div> Matches not found </div>"
+            "<div class='not_found'>Matches not found</div>"
         );
     }
   } catch(error) {

@@ -52,11 +52,11 @@ body {
 }
 
 .club_icon_wrapper {
-  padding: 10px 5px 10px 10px;
+  padding: 10px;
 }
 
 .club_icon {
-  width: 300px;
+  width: 400px;
 }
 
 .club_info {
@@ -66,7 +66,7 @@ body {
 }
 
 .club_info_cell {
-  width: 318px;
+  width: calc(97%/3);
   margin: 10px 5px;
 }
 
@@ -101,4 +101,36 @@ body {
   margin: 5px 0 5px;
   padding: 10px;
   border: 2px solid #7d7d7d;
+}
+.match_date,
+.home_team,
+.away_team {
+  display: flex;
+  flex-direction: row;
+}
+
+.bold {
+  font-weight: bold;
+  margin: 0;
+  margin-right: 5px;
+}
+
+.not_found {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1500px) {
+  .club_info_cell {
+    width: calc(97%/2);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .club_icon {
+    width: 300px;
+  }
+
+  .club_info_cell {
+    width: 100%;
+  }
 }
