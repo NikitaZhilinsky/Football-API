@@ -115,11 +115,16 @@ const showList = async () => {
             const div = document.createElement("div");
             div.className = "club_list_name";
 
+            const img = document.createElement("img");
+            img.setAttribute("src", team.crestUrl);
+            img.className = "club_list_icon";
+
             const li = document.createElement("li");
             li.className = "list_item";
             div.innerHTML = team.name;
             div.onclick = () => showCurrentClubInfo(teamsData, team.id);
 
+            li.appendChild(img);
             li.appendChild(div);
 
             teamList.appendChild(li);

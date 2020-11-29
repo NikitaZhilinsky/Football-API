@@ -35,10 +35,19 @@ body {
 
 .list_item {
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .list_item:hover {
   cursor: pointer;
+}
+
+.club_list_icon {
+  height: 40px;
+  width: 40px;
+  margin: 3px 10px 0 0;
 }
 
 .club_list_name:hover {
