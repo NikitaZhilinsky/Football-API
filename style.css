@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.content {
+  position: relative;
+  padding: 20px;
+}
+
+.list_button {
+  position: relative;
+  width: 100px;
+  height: 45px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  background-color: #d4d5d8;
+  border: none;
+  border-bottom: 2px solid #7d7d7d;
+}
+
+.list_button:hover {
+  cursor: pointer;
+  border: 2px solid #7d7d7d;
+}
+
+.list_button:focus {
+  outline: 0;
+}
+
+.teams_list {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.list_item {
+  list-style-type: none;
+}
+
+.list_item:hover {
+  cursor: pointer;
+}
+
+.club_list_name:hover {
+  color: #028d45;
+}
+
+.club_wrapper {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #7d7d7d;
+}
+
+.club_icon_wrapper {
+  padding: 10px 5px 10px 10px;
+}
+
+.club_icon {
+  width: 300px;
+}
+
+.club_info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.club_info_cell {
+  width: 318px;
+  margin: 10px 5px;
+}
+
+.info_title {
+  background-color: #d4d5d8;
+  border-bottom: 2px solid #7d7d7d;
+  padding: 10px;
+}
+
+.club_name,
+.club_shortname,
+.club_website,
+.club_phone,
+.club_address,
+.club_email,
+.club_founded,
+.club_venue,
+.club_color {
+  padding: 10px;
+}
+
+.club_website_link {
+  text-decoration: none;
+  color: #000;
+}
+
+.club_website_link:hover {
+  text-decoration: underline;
+}
+
+.matches_info {
+  margin: 5px 0 5px;
+  padding: 10px;
+  border: 2px solid #7d7d7d;
+}
